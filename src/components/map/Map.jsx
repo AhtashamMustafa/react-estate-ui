@@ -1,0 +1,11 @@
+import './map.scss'
+
+function Map() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default Map

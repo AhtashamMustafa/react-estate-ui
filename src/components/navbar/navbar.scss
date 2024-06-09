@@ -6,7 +6,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  a {
+  .home,.about,.contacts,.agents,.login,.register {
     transition: all 0.4s ease;
 
     @include sm {
@@ -56,7 +56,8 @@ nav {
     @include md {
       background-color: transparent;
     }
-    a {
+
+    .login,.register {
       padding: 12px 24px;
       margin: 20px;
     }
@@ -89,7 +90,7 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       font-size: 18px;
 
       &.active {
@@ -97,7 +98,7 @@ nav {
       }
 
       @include sm {
-        a {
+        .home,.about,.contacts,.agents,.login,.register {
           display: initial;
         }
       }
