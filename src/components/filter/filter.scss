@@ -1,3 +1,4 @@
+@import '../../responsive.scss';
 .filter {
   display: flex;
   flex-direction: column;
@@ -22,19 +23,35 @@
         border: 1px solid #e0e0e0;
         border-radius: 5px;
         font-size: 14px;
+        @include sm{
+          padding: 5px;
+          width: 67px;
+          
+        }
     }
   }
 
   .top{
     input{
     width: 100%;
+
+    @include sm{
+      width: 75%;
     }
+    }
+
+    
   }
 
   .bottom{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
+    @include sm{
+      gap: 5px;
+
+    }
 
     button{
         width: 100%;

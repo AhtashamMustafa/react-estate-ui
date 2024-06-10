@@ -1,9 +1,14 @@
+@import "../../responsive.scss";
 .card {
   display: flex;
   gap: 20px;
 
   .imageContainer {
     flex: 2;
+
+    @include sm {
+      display: none;
+    }
 
     img {
       width: 100%;
@@ -72,22 +77,22 @@
         }
       }
 
-      .icons{
+      .icons {
         display: flex;
         gap: 20px;
 
-        .icon{
-            border: 1px solid #999;
-            padding: 6px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .icon {
+          border: 1px solid #999;
+          padding: 6px;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-            &:hover{
-                background-color: lightgray;
-            }
+          &:hover {
+            background-color: lightgray;
+          }
         }
       }
     }

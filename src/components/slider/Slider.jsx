@@ -21,7 +21,7 @@ function Slider({ images }) {
   }
   return (
     <div className="slider">
-      {imageIndex !==null && (<div className="fullSlider">
+      {imageIndex !== null && (<div className="fullSlider">
         <div className="arrow" onClick={()=>changeSlide("left")}>
           <img src="/arrow.png" alt="" />
         </div>
